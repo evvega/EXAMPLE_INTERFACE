@@ -2,12 +2,11 @@ from CategoriaA import CategoriaA
 from CalculadoraSalario import CalculadoraI
 
 
-class Trabajador(CalculadoraI):
-
-    def __init__(self, name: str, type: CalculadoraI):
+class Trabajador():
+    def __init__(self, name: str, type: object):
         self.type = type
         self.name = name
 
-    def display(self, name: str, type: CalculadoraI):
-        print(name)
-        print(type.getSalary())
+    def display(self):
+        print(self.name)
+        print(self.type.getSalary())

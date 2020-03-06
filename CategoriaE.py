@@ -6,5 +6,5 @@ class CategoriaE(CalculadoraI):
         self.valor_hora = valor_hora
         self.numero_horas = numero_horas
 
-    def getSalary(self, valor_hora: float, numero_horas: int):
-        return valor_hora * numero_horas
+    def getSalary(self):
+        return self.valor_hora * self.numero_horas

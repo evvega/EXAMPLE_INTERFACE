@@ -6,5 +6,5 @@ class CategoriaA(CalculadoraI):
         self.salario_base = salario_base
         self.overtime = overtime
 
-    def getSalary(self, salario_base: float, overtime: float):
-        return salario_base + overtime
+    def getSalary(self):
+        return self.salario_base + self.overtime

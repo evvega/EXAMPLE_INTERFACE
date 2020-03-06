@@ -5,9 +5,14 @@ from Empleado import Trabajador
 
 
 def main():
-    result: CalculadoraI = CategoriaA(10000, 200)
-    persona: Trabajador = Trabajador("Martion", result)
+    result: CalculadoraI = CategoriaE(25000, 8)
+    persona: Trabajador = Trabajador("Evelin", result)
     persona.display()
+
+    result: CalculadoraI = CategoriaA(250000, 5000)
+    persona: Trabajador = Trabajador("Andres", result)
+    persona.display()
+
 
 
 if __name__ == '__main__':
